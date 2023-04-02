@@ -1,65 +1,34 @@
+import kotlin.jvm.Throws;
+
+import java.util.Arrays;
+
 public class Test {
     public static void main(String[] args) {
         class Solution {
-            public int solution(String name) {
-                int answer = 0;
-                int cnt = 0;
-                char[] nick = name.toCharArray();
-                boolean[] check = new boolean[nick.length];
-
-                for (int i = 0; i < nick.length; ++i) {
-                    if (nick[i] != 'A') {
-                        cnt++;
-                    } else check[i] = true;
-                }
-
-                int idx = 0;
-                for (int i = 0; i < cnt; ++i) {
-                    if (check[idx]) {
-                        int lidx = idx;
-                        int ridx = idx;
-                        int left = 0;
-                        int right = 0;
-
-                        while (check[lidx]) {
-                            if (lidx == 0) lidx = nick.length - 1;
-                            else lidx--;
-                            left++;
-                        }
-
-                        while (check[ridx]) {
-                            ridx = (ridx + 1) % nick.length;
-                            right++;
-                        }
-
-                        if (left > right) {
-                            idx = ridx;
-                            answer += right;
-                        } else {
-                            idx = lidx;
-                            answer += left;
+            public int[] solution(int[] lottos, int[] win_nums) {
+                int maxResult = 0;
+                int minResult = 0;
+                for (int i = 0; i < win_nums.length; i++) {
+                    if (win_nums[i] == lottos[i]) {
+                        maxResult++;
+                        minResult++;
+                    } else {
+                        if (lottos[i] == 0) {
+                            maxResult++;
                         }
                     }
-                    check[idx] = true;
-                    answer += changeAlphabet(idx, nick);
                 }
-                System.out.println(answer);
+
+                int[] answer = {maxResult, minResult};
+                System.out.println(maxResult);
+                System.out.println(minResult);
                 return answer;
-            }
-
-            private int changeAlphabet(int i, char[] nick) {
-                int up = nick[i] - 'A';
-                int down = 'Z' - nick[i] + 1;
-
-                if (up > down) {
-                    return down;
-                } else {
-                    return up;
-                }
             }
         }
 
         Solution s = new Solution();
-        s.solution("JAN");
+        int[] lottos = new int[]{44, 1, 0, 0, 31, 25};
+        int[] win_nums = new int[]{31, 10, 45, 1, 6, 19};
+        s.solution(lottos, win_nums);
     }
 }

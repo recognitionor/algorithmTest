@@ -91,9 +91,7 @@ public class PermutationTest {
             list.add(i);
             rePermutation(list, n, r);
             list.removeLast();//해당 넘버를 다시 제거 (즉,뽑지 않고 다음 번호 뽑기위함)
-
         }
-
     }
 
     //순열
