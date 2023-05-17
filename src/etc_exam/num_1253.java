@@ -1,3 +1,5 @@
+package etc_exam;
+
 import java.util.HashMap;
 import java.util.HashSet;
 

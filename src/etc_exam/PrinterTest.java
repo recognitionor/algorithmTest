@@ -1,3 +1,5 @@
+package etc_exam;
+
 public class PrinterTest {
     public static void main(String[] args) {
         class Solution {

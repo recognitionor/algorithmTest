@@ -1,3 +1,5 @@
+package etc_exam;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;

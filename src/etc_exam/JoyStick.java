@@ -1,3 +1,5 @@
+package etc_exam;
+
 public class JoyStick {
 
     private static int converterStr(String str) {

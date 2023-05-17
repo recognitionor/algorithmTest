@@ -1,3 +1,5 @@
+package etc_exam;
+
 public class RobotInGrid {
     //    private static int[][] maze = {
 //            {0, 0, 0, 0, 0, 0, 0, 1},

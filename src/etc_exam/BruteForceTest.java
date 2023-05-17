@@ -1,3 +1,5 @@
+package etc_exam;
+
 import java.util.ArrayList;
 
 public class BruteForceTest {

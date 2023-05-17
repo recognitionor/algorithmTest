@@ -1,3 +1,5 @@
+package etc_exam;
+
 import java.util.LinkedList;
 
 public class PermutationTest {

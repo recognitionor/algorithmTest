@@ -1,3 +1,5 @@
+package etc_exam;
+
 import kotlin.jvm.Throws;
 
 import java.util.Arrays;

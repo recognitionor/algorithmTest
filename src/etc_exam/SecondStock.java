@@ -1,3 +1,5 @@
+package etc_exam;
+
 public class SecondStock {
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package etc_exam;
+
 public class ReceiverTop {
     public static void main(String[] args) {
 

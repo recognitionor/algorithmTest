@@ -1,3 +1,5 @@
+package etc_exam;
+
 import java.util.ArrayList;
 
 /* 트럭 이동 문제*/

@@ -1,3 +1,5 @@
+package etc_exam;
+
 class MiroSearch {
 
     static int ALREADY_VISITED = 2;
